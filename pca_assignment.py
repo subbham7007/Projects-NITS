@@ -1,30 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
-
 import math
 
-
-# In[2]:
 
 
 df = pd.read_csv("Iris/Iris.csv")
 df.shape
-
-
-# In[3]:
-
-
 df.head()
-
-
-# In[4]:
-
 
 df.set_index('Id', inplace = True)
 df.head()
@@ -48,11 +33,6 @@ df['SW-SW_mean'] = (df['SepalWidthCm'] - df['SWidth_mean']).round(3)
 df['PL-PL_mean'] = (df['PetalLengthCm'] - df['PLength_mean']).round(3)
 df['PW-PW_mean'] = (df['PetalWidthCm'] - df['PWidth_mean']).round(3)
 df.head()
-
-
-# In[ ]:
-
-
 
 
 
@@ -124,7 +104,6 @@ p.get_pca()
 p.eigenvalues, p.eigenvectors
 
 
-# In[ ]:
 
 
 
